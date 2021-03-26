@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+    <style>
+        .imageOverlay{
+            opacity: .8;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+
+        var map = L.map('map',{
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 16,
+           zoomControl: false,
+           layers: [grayscale]
+       }) 
+
+        /**
+         * @description: 表示创建标记时要提供的图标
+         * @param { <Point> corner1, <Point> corner2  |  <Point[]> points }
+         * @return { point }
+         */
+        
+         var myIcon = L.icon({
+            iconUrl: 'my-icon.png',
+            iconSize: [38, 95],
+            iconAnchor: [22, 94],
+            popupAnchor: [-3, -76],
+            shadowUrl: 'my-icon-shadow.png',
+            shadowSize: [68, 95],
+            shadowAnchor: [22, 94]
+        });
+
+        L.marker([31.36831352303675, 120.73309421539305], {icon: myIcon}).addTo(map);
+
+        // L.Icon.Default扩展了L.Icon，默认是Leaflet用于标记的蓝色图标
+
+        /**
+
+            Method	                    Returns	                Description
+
+            createIcon(<HTMLElement> oldIcon?)	HTMLElement	        显示图标时在内部调用
+
+            createShadow(<HTMLElement> oldIcon?)	HTMLElement	    与createIcon相同，但位于其下方的阴影中
+
+        */
+    </script>
+</body>
+</htm>

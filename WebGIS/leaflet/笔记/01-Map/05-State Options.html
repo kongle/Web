@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>状态选项</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../../src/leaflet/leaflet.css" />
+    <script src="../../src/leaflet/leaflet.js" ></script>
+   
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+
+       var layer =  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        })
+
+        var map = L.map('map',{
+           
+           // State Options
+
+            // Type:  CRS ;  Coordinate Reference System
+           crs: L.CRS.EPSG3857,  
+
+           center: [31.36831352303675, 120.73309421539305],  // 在屏幕的中心点 
+
+            // Type:  Number; zoom设置
+           zoom: 13,   
+           minZoom: 1,
+           maxZoom: 16,
+        
+           // Type:  Layer[];
+           layers: [layer],   
+
+           // Type:  LatLngBounds; 设置此选项后，地图会将视图限制在给定的地理范围内;动态设置限制: setMaxBounds();
+           maxBounds: null,   
+        
+            // Type:  Renderer; 在地图上绘制矢量图层的方法;L.SVG或L.Canvas取决于浏览器支持
+            renderer: L.svg()
+
+       }) 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>contextmenu</title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+   
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+        var map = L.map('map',{
+           
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           layers: [grayscale]
+       }) 
+
+      /**
+       * @description: 当用户在地图上按下鼠标右键时触发;
+                       从而阻止默认浏览器上下文菜单显示在此事件上是否有侦听器;
+                       当用户按住一次触摸（也称为长按）时，也会在移动设备上触发
+       * eventData: MouseEvent
+       * @return {*}
+       */
+      map.on('contextmenu',function(e){
+            console.log(e.type);
+       });
+
+    </script>
+</body>
+</html>

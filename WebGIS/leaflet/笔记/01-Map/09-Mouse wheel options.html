@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>鼠标滚轮选项</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../../src/leaflet/leaflet.css" />
+    <script src="../../src/leaflet/leaflet.js" ></script>
+   
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+
+       var layer =  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        })
+
+
+        var map = L.map('map',{
+           
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           layers: [layer],    
+            
+            // 鼠标滚轮是否可以缩放地图
+           scrollWheelZoom: true,
+
+            // 限制滚轮滚动的速率; ms
+           wheelDebounceTime: 40,
+           
+            // 滚动像素数
+           wheelPxPerZoomLevel: 60
+
+       }) 
+
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../../src/leaflet/leaflet.css" />
+    <script src="../../src/leaflet/leaflet.js" ></script>
+   
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+
+        var map = L.map('map',{
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           layers: [grayscale]
+       });
+
+       /**
+         * @description:  一种具有将世界的地理坐标投影到平坦表面（和背面）上的方法的对象
+         */
+    
+       /** 
+            Properties:
+            bounds	Bounds	投影有效的范围
+       */
+
+       /** 
+            Defined projections:
+
+            L.Projection.LonLat:    Carree投影-最简单的投影，主要由GIS爱好者使用。直接将x映射为经度，将y映射为纬度
+
+            L.Projection.Mercator:  椭圆墨卡托投影
+
+            L.Projection.SphericalMercato:  球形墨卡托投影-在线地图上最常见的投影
+
+       */
+    </script>
+</body>
+</html>

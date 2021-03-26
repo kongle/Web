@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+    <style>
+        .imageOverlay{
+            opacity: .8;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+
+        var map = L.map('map',{
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 16,
+           zoomControl: false,
+           layers: [grayscale]
+       }) 
+
+        /**
+         * @description: 代表像素坐标中的矩形区域
+         * @param { <Point> corner1, <Point> corner2  |  <Point[]> points }
+         * @return { point }
+         */
+        
+        var p1 = L.point(10, 10),
+            p2 = L.point(40, 60),
+            bounds = L.bounds(p1, p2);
+            
+        /** 
+            extend(<Point> point)	this	   扩展范围以包含给定点
+
+            getCenter(<Boolean> round?)	Point	 边界的中心点
+ 
+            getBottomLeft()	Point	   边界的左下角
+
+            getTopRight()	Point	
+
+            getTopLeft()	Point	
+
+            getBottomRight()	Point	
+
+            getSize()	Point	   给定范围的大小
+
+            contains(<Bounds> otherBounds)	Boolean	
+
+            contains(<Point> point)	Boolean	
+
+            intersects(<Bounds> otherBounds)	Boolean	   相交
+
+            overlaps(<Bounds> otherBounds)	Boolean	  矩形与给定边界重叠
+
+         */
+
+    </script>
+</body>
+</htm>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>distance</title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+   
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+        var map = L.map('map',{
+           
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           zoomControl: false,
+           layers: [grayscale]
+       }) 
+
+      /**
+       * @description: 根据地图的CRS返回两个地理坐标之间的距离。默认情况下，此距离以米为单位
+       * param { <LatLng> latlng1, <LatLng> latlng2 } 
+       * @return { Number }  
+       */
+        
+       setTimeout( function(){
+
+                 console.log( map.distance( [31.36831352303675, 120.73309421539305] , [31.36831352303675, 120.83309421539305] ) );
+                
+                
+        }, 1000)
+    
+     
+    </script>
+</body>
+</html>

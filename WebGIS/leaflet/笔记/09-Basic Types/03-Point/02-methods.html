@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+    <style>
+        .imageOverlay{
+            opacity: .8;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+
+        var map = L.map('map',{
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 16,
+           zoomControl: false,
+           layers: [grayscale]
+       }) 
+
+        /**
+         * @description: 用像素表示x和y坐标的点  
+         * @param { <Number> x, <Number> y, <Boolean> round?  |  <Number[]> coords  |  <Object> coords }
+         * @return { point }
+         */
+        
+      
+         var point  = L.point (200,300);
+        
+        /**
+          * @description: 当前点的副本
+          * @param {*}
+          * @return {*}
+          */
+         point.clone();
+        
+        /**
+        * @description: 当前点和给定点相加的结果
+        * @param { <Point> otherPoint }
+        * @return {*}
+        */        
+        point.add( 1,1 );
+
+        /**
+        * @description: 当前点和给定点相减的结果
+        * @param { <Point> otherPoint }
+        * @return {*}
+        */    
+        point.subtract( 1, 1 )
+
+        /**
+        * @description: 将当前点的每个坐标乘以每个比例坐标
+        * @param { <Point> scale }
+        * @return {*}
+        */        
+        point.scaleBy( 1, 1 )
+
+        /**
+        * @description: 当前点和给定点之间的笛卡尔距离
+        * @param {*}
+        * @return {*}
+        */        
+        point.distanceTo( 1, 1 )
+
+
+    </script>
+</body>
+</htm>

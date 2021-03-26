@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+    <style>
+        .imageOverlay{
+            opacity: .8;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+        /**
+         * @description: 用于在地图上加载和显示图块图层,大多数切片服务器都需要的属性，您可以设置在图层下面。扩展GridLayer
+         */
+        var map = L.map('map',{
+           
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           zoomControl: false,
+           layers: [grayscale]
+       }) 
+
+        /**
+         * @description: 用于加载和显示地图特定范围内的单个图像。扩展图层
+         * @param { <String> imageUrl, <LatLngBounds> bounds, <ImageOverlay options> options? }
+         * @return { }
+         */
+
+        var imageUrl = 'http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
+            imageBounds = [[31.36831352303675, 120.74509421539305], [31.39831352303675, 120.77509421539305]];
+
+            L.imageOverlay(imageUrl, imageBounds, {
+                opacity: 1,
+                alt: '',
+                interactive: false,   // 如果为true，则在单击或悬停图像叠加层时将发出鼠标事件
+                crossOrigin:  false,  //  Boolean|String 是否将crossOrigin属性添加到图像; 如果要访问图像像素数据，这是必需的。有关有效的字符串值，请参阅CORS设置
+                errorOverlayUrl: '',  // 叠加层图片的网址，以代替无法加载的叠加层显示
+                className: 'imageOverlay',     // 分配给图像的自定义类名称。默认为空
+                zIndex: 1
+            }).addTo(map);
+    
+    </script>
+</body>
+</html>

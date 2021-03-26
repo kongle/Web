@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>预览</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../../src/leaflet/leaflet.css" />
+    <script src="../../src/leaflet/leaflet.js" ></script>
+   
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        // 初始化地图 
+        var mymap = L.map('map').setView([31.36831352303675, 120.73309421539305], 13);
+        // 初始化瓦片图层并添加到map
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            inertia: true,
+        }).addTo(mymap);
+
+        L.marker([31.36831352303675, 120.73309421539305]).addTo(mymap)
+            .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+
+        var popup = L.popup();
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("You clicked the map at " + e.latlng.toString())
+                .openOn(mymap);
+        }
+
+        mymap.on('click', onMapClick);
+
+
+        // 地图事件 两点间距离
+    </script>
+</body>
+</html>

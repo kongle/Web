@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>L.map是L.Evented的实例 </title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../../src/leaflet/leaflet.css" />
+    <script src="../../src/leaflet/leaflet.js" ></script>
+   
+</head>
+<body>
+    <!-- <div id="map1"></div> -->
+    <div id="map2"></div>
+    <script>
+        // 初始化地图 1
+        // var map1 = L.map('map1').setView([31.36831352303675, 120.73309421539305], 13);
+
+        // 初始化地图 2  第一个参数可以是选择器，也可以是HTMLElement
+        var map2 = L.map('map2',{
+            center: [31.36831352303675, 120.73309421539305],  // 设置视野中心坐标
+            zoom: 13,   // 初始缩放等级
+            
+            preferCanvas: false  // 路径选择canvas渲染器, 默认svg
+        }) 
+
+        
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(map2);
+
+        L.marker([31.36831352303675, 120.73309421539305]).addTo(map2)
+            .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+
+        console.log(map2)
+
+    </script>
+</body>
+</html>

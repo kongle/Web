@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>触摸互动选项</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../../src/leaflet/leaflet.css" />
+    <script src="../../src/leaflet/leaflet.js" ></script>
+   
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+
+       var layer =  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        })
+
+
+        var map = L.map('map',{
+           
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           layers: [layer],    
+            
+           /*
+             支持瞬间点击（修复在iOS / Android上固定200毫秒的点击延迟）
+             和触摸保持（作为contextmenu事件触发);
+           */
+           tap: true,
+
+           // 触摸过程中移动手指的最大像素数，可以将其视为有效拍击
+           tapTolerance: 15,
+
+           // 用两根手指触摸拖动是否可以缩放地图
+           touchZoom: true,
+
+           // 缩放超过最小/最大缩放比例，然后在反弹
+           bounceAtZoomLimits: true
+
+       }) 
+
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+    <style>
+        .imageOverlay{
+            opacity: .8;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+
+        var map = L.map('map',{
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 16,
+           zoomControl: false,
+           layers: [grayscale]
+       }) 
+
+        /**
+         * @description: 数组形式与LatLng 等效  
+         * @param { <Number> latitude, <Number> longitude, <Number> altitude?  |  <Array> coords  |  <Object> coords }
+         * @return { }
+         */
+        
+         var latlng = L.latLng(31.36831352303675, 120.73309421539305);
+
+        /**
+         * @description: 两点是否同一位置（或误差很小） 可以通过将maxMargin设置为一个较小的值来覆盖误差范围
+         * @param { <LatLng> otherLatLng, <Number> maxMargin? }
+         * @return {*}
+         */
+        console.log(latlng.equals(latlng));
+        
+        /**
+        * @description: 返回使用余弦球法则计算的给定LatLng的距离（以米为单位）。
+        * @param {*}
+        * @return {*}
+        */    
+        console.log(latlng.distanceTo([31.36, 120.73]));
+
+        /**
+        * @description: 
+        * @param {*}
+        * @return {*}
+        */    
+        console.log(latlng.wrap());
+
+        /**
+        * @description: 返回一个新的LatLngBounds对象，其中每个边界与LatLng的距离为sizeInMeters / 2米
+        * @param { <Number> sizeInMeters }
+        * @return {*}
+        */    
+        console.log(latlng.toBounds(2));
+
+
+
+    </script>
+</body>
+</htm>

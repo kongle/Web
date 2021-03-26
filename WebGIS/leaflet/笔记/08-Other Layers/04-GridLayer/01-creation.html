@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+    <style>
+        .imageOverlay{
+            opacity: .8;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+
+        var map = L.map('map',{
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 16,
+           zoomControl: false,
+           layers: [grayscale]
+       }) 
+
+        /**
+         * @description: 用于处理HTML元素的平铺网格的通用类。这是所有图块层的基类。。。。。。
+         * @param { <GridLayer options> options? }
+         * @return { }
+         */
+
+            // 同步用例
+            // 要创建自定义图层，请继承GridLayer并实现createTile（）方法
+            
+            var CanvasLayer = L.GridLayer.extend({
+                createTile: function(coords){
+                    // create a <canvas> element for drawing
+                    var tile = L.DomUtil.create('canvas', 'leaflet-tile');
+
+                    // setup tile width and height according to the options
+                    var size = this.getTileSize();
+                    tile.width = size.x;
+                    tile.height = size.y;
+
+                    // get a canvas context and draw something on it using coords.x, coords.y and coords.z
+                    var ctx = tile.getContext('2d');
+
+                    // return the tile so it can be rendered on screen
+                    return tile;
+                }})
+            
+            // 异步使用 
+            // 瓦片创建也可以是异步的，这在使用第三方图形库时很有用
+            
+            var CanvasLayer2 = L.GridLayer.extend({
+                createTile: function(coords, done){
+                    var error;
+
+                    // create a <canvas> element for drawing
+                    var tile = L.DomUtil.create('canvas', 'leaflet-tile');
+
+                    // setup tile width and height according to the options
+                    var size = this.getTileSize();
+                    tile.width = size.x;
+                    tile.height = size.y;
+
+                    // draw something asynchronously and pass the tile to the done() callback
+                    setTimeout(function() {
+                        done(error, tile);
+                    }, 1000);
+
+                    return tile;
+                }})
+
+
+
+    </script>
+</body>
+</htm>

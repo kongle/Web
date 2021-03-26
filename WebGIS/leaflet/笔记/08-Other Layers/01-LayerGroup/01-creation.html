@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+    <style>
+        .imageOverlay{
+            opacity: .8;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+
+        var map = L.map('map',{
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           zoomControl: false,
+           layers: [grayscale]
+       }) 
+
+        /**
+         * @description: 用于将多个图层分组并作为一个图层进行处理。
+                            如果将其添加到地图，则从组中添加或删除的所有图层也将在地图上添加/删除;Extends Layer.
+         * @param { <Layer[]> layers?, <Object> options? }
+         * @return { }
+         */
+        
+        
+         var cities = L.layerGroup();
+            var mk1 = L.marker([31.36831352303675, 120.73309421539305]).bindPopup('1').addTo(cities);
+            L.marker([31.36831352303675, 120.74309421539305]).bindPopup('2').addTo(cities),
+            L.marker([31.36831352303675, 120.75309421539305]).bindPopup('3').addTo(cities),
+            L.marker([31.36831352303675, 120.76307421569305]).bindPopup('4').addTo(cities);
+
+            cities.addTo(map);
+
+            let circle = L.circle([31.36981352303675, 120.73309421539305], {radius: 500}).addTo(map);
+
+            cities.addLayer(circle);  // 再添加图层
+
+            // methods
+            // toGeoJSON(<Number> precision?)
+
+            // addLayer(<Layer> layer)
+
+            // removeLayer(<Layer> layer)
+
+            // removeLayer(<Number> id)
+
+            // hasLayer(<Layer> layer|<Number> id)
+
+            // clearLayers()
+
+            // invoke(<String> methodName, …)  ???
+
+            // eachLayer(<Function> fn, <Object> context?)
+
+                // getLayer(<Number> id)
+                // getLayers()
+                // setZIndex(<Number> zIndex)
+                // getLayerId(<Layer> layer)
+
+    </script>
+</body>
+</htm>

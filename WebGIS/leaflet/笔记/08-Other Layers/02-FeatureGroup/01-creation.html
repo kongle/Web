@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+    <style>
+        .imageOverlay{
+            opacity: .8;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+
+        var map = L.map('map',{
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           zoomControl: false,
+           layers: [grayscale]
+       }) 
+
+        /**
+         * @description: 扩展LayerGroup，使对其所有成员层执行相同操作变得更加容易：
+                1. bindPopup一次将弹出窗口绑定到所有图层
+                2.事件会传播到FeatureGroup，因此，如果该组具有事件处理程序，它将处理来自任何图层的事件。这包括鼠标事件和自定义事件
+                3.具有layeradd和layerremove事件
+         * @param { <Layer[]> layers?, <Object> options? }
+         * @return { }
+         */
+        
+        
+            
+            var marker1 = L.marker([31.36831352303675, 120.73309421539305]).bindPopup('1');
+            var marker2 = L.marker([31.36831352303675, 120.74309421539305]).bindPopup('2');
+            var marker3 = L.marker([31.36831352303675, 120.75309421539305]).bindPopup('3');
+            let circle = L.circle([31.36981352303675, 120.73309421539305], {radius: 500}).addTo(map);
+
+            var cities = L.featureGroup([marker1, marker2,marker3,circle]);
+
+            cities.bindPopup('Hello world!')
+                .on('click', function() { alert('Clicked on a member of the group!'); })
+                .addTo(map);
+                
+    </script>
+</body>
+</htm>

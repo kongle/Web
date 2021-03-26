@@ -1,0 +1,2820 @@
+A
+absolute reference frame 绝对参考坐标系
+
+adjacency analysis 相邻分析
+
+adjoining sheets 邻接图幅
+
+agglomeration （制图分类中的）聚合方法
+
+aggregation 聚合；聚集
+
+altitude tinting 分层设色
+
+anima ted mapping 动画制图
+
+animation 动画
+
+
+applica tions package 应用软件包
+
+applica tion program 应用程序
+
+Application Programming Interface(API) 应用程序界面
+
+Applications Program Interface 应用程序接口
+
+applica tions system 应用系统
+
+applied cartography 应用地图学
+
+auto-cartography 自动制图
+
+automa ted cartography 自动制图学
+
+automa ted data dictionary 自动数据字典
+
+automa ted data processing 自动数据处理
+
+Automated Digitizing System(ADS) 自动数字化系统
+
+automa ted feature recognition 自动特征识别
+
+azimuth coordinate system 方位坐标系
+
+B
+B-spline b样条曲线
+
+B-tree 二叉树；二元树
+
+base map of topography 地形底图
+
+base map/cadastre 底图／地籍图
+
+Beijing geodetic coordinate system 1954 １９５４年北京坐标系
+
+block correction 区域改正
+
+block 数据块；信息组；程序块
+
+border figure 图廓数据
+
+border information 图廓注记
+
+border line 图廓线
+
+border matching 边缘匹配
+
+border 边缘；界限；边界线；邻接；图廓间
+
+C
+cadastral survey 地籍测量
+
+cadaster 地政局；地籍图
+
+cadastral attribute 地籍特征
+
+cadastral data base 地籍数据库
+
+cadastral features 地籍特征
+
+cadastral information system 地籍信息系统
+
+cadastral information 地籍信息
+
+cadastral inventory 地籍调查
+
+cadastral la yer 地籍信息层
+
+cadastral lists 地籍册
+
+cadastral ma nagement 地籍管理
+
+cadastral map 地籍图
+
+cadastral map series 地籍图册
+
+cadastral mapping 地籍制图
+
+carrier frequency(GPS) 载波频率（全球定位系统）
+
+cartographic analysis 地图分析
+
+cartographic classification 地图分类
+
+cartographic communication 地图传输
+
+cartographic data base ma nagement system 地图数据库管理系统
+
+cartographic data base 地图数据层
+
+cartographic data model 地图数据模型
+
+cartographic expert system 制图专家系统
+
+cartographic genera lization 制图综合
+
+cartographic projection 地图投影
+
+cartographic(a l) analysis 地图分析
+
+cartography 地图制图学；地图学
+
+chorographic map 时序图
+
+choropleth map 等值区域图
+
+class interval 分级间距；分类间距
+
+class list 分类清单
+
+class 分类，分级
+
+classification rule 分类规则
+
+cluster 聚类分析
+
+compaction 压缩
+
+completeness 完整性
+
+computer-graphics technology 计算机图形技术
+
+congruent ima ge 叠合图象
+
+contour 等高线，等值线，轮廓
+
+contouring displa y 分层显示
+
+cover-ID 层标识符
+
+covera ge ［GIS］图层
+
+D
+data 数据
+
+data access security 数据存取安全性
+
+data accessibility 数据可达性
+
+data acquisition 数据获取
+
+data analysis 数据分析
+
+data architecture 数据结构
+
+data attribute 数据特性
+
+data base；database 数据库
+
+data capture 数据采集
+
+data catalogue 数据目录
+
+data communications 数据通信
+
+data quality 数据质量
+
+data security 数据安全性
+
+data conversion 数据转换
+
+data definition 数据定义
+
+data editing 数据编辑
+
+data element 数据要素
+
+data encoding 数据编码
+
+data entry 数据输入
+
+Data Exchange Format 数据交换格式
+
+data extraction 数据提取
+
+data file 数据文件
+
+data handling 数据处理
+
+data item 数据项
+
+data layering 数据分层
+
+data manipulation 数据操作
+
+data model 数据模型
+
+data product 数据产品
+
+data quality 数据质量
+
+data reality 数据真实性
+
+data records 数据记录
+
+data reduction 数据整理
+
+data reduction；datacompression 数据压缩
+
+data redundancy 数据冗余度
+
+data representation 数据表示
+
+data retrieval 数据查询
+
+data schema 数据模式
+
+data security 数据安全性
+
+data sensitivity 数据灵敏性
+
+data set 数据集
+
+data set quality 数据集质量
+
+data smoothing 数据平滑
+
+data snooping 数据探测法
+
+data sources 数据源
+
+data storage 数据贮存
+
+data structure conversion 数据结构转换
+
+data structure 数据结构
+
+data transfer 数据传输
+
+data transmission 数据传输
+
+data type 数据类型
+
+data updating 数据更新
+
+data vectorization 数据矢量化
+
+datum transformation 基准变换
+
+descriptive data 描述数据
+
+desktop GIS 桌面地理信息系统
+
+differential Global Positioning System ；
+
+DGPS 差分全球定位系统
+
+digital cartography 数字地图制图
+
+digital correlation 数字相关
+
+digital data collection 数字数据存贮系统
+
+Digital Data Communication Message Protocol 数字化数据通讯消息协议
+
+Digital Data System 数字化数据系统
+
+digital data 数据；数字资料
+
+Digital Elevation Matrix(DEM) 数字高程矩阵
+
+digital encoding 数字编码
+
+digital exchange format 数据转换标准
+
+Digital Field Update System 数字化外业更新系统
+
+digital files synchronization 数字化文件同步化
+
+Digital Geographic Information 数字化地理信息交换标准
+
+Exchange Standard；DGIWG；NATO
+
+digital image processing 数字图象处理
+
+digital image 数字影（图）象
+
+Digital Landscape Model 数字景观模型
+
+Digital Line Graph；DLG 数字线划图
+
+digital map registration 数字地图套合
+
+digital mapping 数字测图
+
+digital map 数字地图
+
+digital mosaic 数字镶嵌
+
+digital mosaicing 数字镶嵌
+
+digital number；DN 数字值
+
+digital orthoimagery 数字正射影象
+
+digital orthoimage 数字正射影象
+
+Digital Orthophotoquads；DOQ 数字正方形正射象片图
+
+digital orthophoto 数字正射影象
+
+digital photogrammetry 数字摄影测量
+
+digital process 数字化过程
+
+digital rectification 数字纠正
+
+digital simulation 数字模拟
+
+digital surface model；DSM 数字表面模型
+
+digital tablet 数字化板
+
+Digital Terrain Model；DTM 数字地面模型
+
+Digital to Analog Converter 数／模转换器
+
+digital tracing table 数控绘图桌
+
+digital value 数字化值
+
+digital voice 数字化声音
+
+digital-analog 数字模拟
+
+digitalyzer 模数转换器
+
+digital 数字的
+
+digitization 数字化
+
+digitize maps 数字化地图
+
+digitized data 数字化数据
+
+digitized file 数字化文件
+
+digitized image 数字化影象
+
+digitized terrain data 数字化地面数据
+
+digitized video 数字影（图）象
+
+digitizer accuracy 数字化仪精度
+
+digitizer resolution 数字化仪分辨率
+
+digitizer workstation 数字化工作站
+
+digitizer 数字化仪
+
+digitizing 数字化
+
+digitizing board 数字化板
+
+digigtizing cursor 数字化鼠标
+
+digitizing edit 数字化编辑
+
+digitizing table；tablet 数字化板
+
+digitizing threshold 数字化阀值
+
+digraph 有向图
+
+disk space 磁盘空间
+
+disk storage 磁盘存储
+
+diskette 软磁盘
+
+disk 磁盘
+
+distributed architecture 分布式体系结构
+
+Distributed Computing Environment 分布式计算环境
+
+Distributed Data Processing 分布式数据处理
+
+Distributed Database Management System,DDBMS 分布式数据管理系统
+
+Distributed Database ；DDB 分布式数据库
+
+distributed processing 分布式处理
+
+Distributed Relational 分布式关系数据库结构
+
+Database Architecture(DRDA)
+
+districe coding 地区编码
+
+districting 分区（空间聚合）
+
+disturbed orbit 卫星轨道升交点
+
+document file 文档文件
+
+Document Image Peocessing(DIP) 文件影象处理
+
+document window 文档窗口
+
+document-file icon 文档文件图标
+
+document/page reader 光符识别仪器
+
+documentation drawing 二维绘图
+
+downloadable font 可传输字符
+
+download 文件（程序）传输（从中心机到个人微机）
+
+drafting scale 绘图比例尺
+
+drafting 绘制；绘图；草拟
+
+draft 草图；草案
+
+drainage map 水系图；流域图
+
+drainage pattern 水系类型；水网类型
+
+drainage 水系；水文要素；排水设备
+
+drape 两维数据在表面叠加产生透视图
+
+draping 两维数据叠加在透视图上
+
+drawing board 绘图板
+
+drawing entities 绘图实体
+
+Drawing Exchange Format 图形交换格式
+
+drawing extents 绘图范围
+
+drawing file 绘图文件
+
+drawing grid 绘图格网
+
+drawing interchange format 绘图交换格式
+
+drawing limits 绘图限制
+
+drawing registration 绘图对齐；绘图定位
+
+drawing sizes 图面大小；图幅尺寸
+
+drawing unit 绘图单元
+
+drawing 绘图
+
+drum plotter 滚筒式绘图机
+
+drum scanner 滚筒式扫描机
+
+duobinary coding 双二进制编码
+
+DX 90 水文地理数据格式
+
+dynamic-Link Library,DLL 动态链接库
+
+E
+E-R diagram E-R图
+
+earth gravity model 地球重利模型
+
+Earth Resources Information System；ERIS 地球资源信息系统
+
+EROS 地球资源观测系统
+
+earth satellite thematic sensing 地球卫星专题遥感
+
+earth shape；figure of the earth 地球形状
+
+Earth spheroid 地球椭球体
+
+Earth spherop 地球椭球面
+
+earth surface 地球表面
+
+earth synchronous orbit 地球同步轨道
+
+earth window 地球数据窗口
+
+Earth-centered ellipsoid 地心椭球
+
+Earth-fixed coordinate system 站心坐标系
+
+EarthResource Technology Satellite 地球资源技术卫星
+
+Earthwatch 地球监视卫星
+
+ecosystem 生态系统
+
+edge join 边缘匹配
+
+edge matching 边缘匹配
+
+edge of the format；map border 图廓
+
+Electronic Data Interchange (EDI) 电子数据交换
+
+edit 编辑；修改
+
+edit verification 编辑核实
+
+edit/display on input 输入编辑/显示
+
+edit/display on output 输出编辑/显示
+
+editing 编辑
+
+effective radius of the Earth 地球有效半径
+
+eigenvector analysis 特征向量分析
+
+eigenvector 特征向量
+
+EIS process 环境影响评价过程
+
+electric mail ；e-mail 电子邮件
+
+electronic bearing 电测方位
+
+electronic chart 电子海图
+
+Electric Chart and Display 电子图形显示信息系统
+
+Information System；SCDIS
+
+electronic chart data base；ECDB 电子海图数据库
+
+Electronic Data Collection 电子数据集合
+
+Electronic Data Interchange；EDI 电子数据交换
+
+electronic drawing tablet 电子绘图板
+
+electronic engraver 电子刻图机
+
+electronic imaging system 电子成像系统
+
+electronic line scanner 电子扫描机
+
+electronic map 电子地图
+
+electronic publishing system 电子印刷系统
+
+Embedded QUEL 内嵌式查询
+
+embedded SQL 镶嵌式查询语言
+
+emergency run 地图翻印
+
+encipher；encode；encoding 编码
+
+enclosing rectangle (最小)封闭四边形
+
+encoding code model 编码模型
+
+encoding scheme 编码方法
+
+End Of Line 文件结束标志
+
+End Of Text 行结束标志
+
+end points 文本结束标志
+
+end user participation 终端用户参与
+
+end user 终端用户
+
+ent-to-end data system 终端站间数据系统
+
+Enhanced graphics Adapter(EGA) 增强图形适配器
+
+enhanced imagery 增强图象
+
+enhanced mode 增强模式
+
+entity 实体
+
+entity classes 实体类
+
+entity classes 实体分类
+
+entity instance 实体样品
+
+entity object 实体对象
+
+entity point 实体定位点
+
+entity relationship data model 实体关系数据模型
+
+entity relationship diagram；ERD 实体关系图
+
+Entity Relationship Model；E-R Model 实体关系模型
+
+entity set model 实体集模型
+
+entity set 实体集
+
+entity subtype/supertype 实体子类型/母类型
+
+entity type 实体类型
+
+Entity-Relationship Approach E-R法
+
+entity 实体,组织,结构
+
+entropy coding 熵编码
+
+entropy 熵(平均信息量)
+
+environmental analysis 环境分析
+
+environmental assessment 环境评价
+
+environmental cadastre 环境地籍图
+
+environmental capacity 环境容量
+
+environmental data base 环境数据库
+
+environmental data/information 环境数据/信息
+
+environmental map 环境地图
+
+environmental mapping data 环境制图数据
+
+environmental overlays 环境图
+
+environmental planning 环境规划
+
+environmental quality assessment 环境质量评价
+
+environmental remote sensing 环境遥感
+
+Eclogically Sustainable Development 生态平衡的持续发展
+
+equation item 方程项
+
+European Transfer Format(ETF) 欧洲传输格式
+
+executable file 执行文件
+
+execution 执行(程序指令)
+
+extended color 扩展彩色
+
+Extended Graphics Adapter(EGA) 增强图形适配卡
+
+Extended Graphics Array 扩展图形矩阵
+
+Extensional Database 扩展数据库
+
+external attribute table 外部属性表
+
+external data storage 外部数据存储(相对于数据库)
+
+external database file 外部数据库文件
+
+external margin 外图廓
+
+external polygon 外部多边形
+
+external program 外部程序
+
+external schema 外部模式
+
+external storage 外部存储设备
+
+F
+facilities 设施；装备
+
+facility data 设施数据
+
+facility instrument 设施设备
+
+facility map 设施图
+
+facility network 设施网络
+
+facility splice 设施接合
+
+fast Fourier transform 快速傅立叶变换
+
+feature 特征
+
+Feature and Attribute Coding Catalogue 地物与属性编码目录
+
+feature attribute table 特征属性表
+
+feature bounded 边界标识地物
+
+feature class 特征分类
+
+feature codes menu 特征码清单
+
+feature codes 特征码
+
+feature coding 特征编码
+
+feature extraction 特征提取
+
+feature identifier 特征标识符
+
+feature ID 特征标识符
+
+feature instance 特征实例
+
+feature item 特征项
+
+feature marked 有标记特征
+
+feature number 特征标识符
+
+feature selection 特征选择
+
+feature separation 特征分类
+
+feature spanned 跨区特征
+
+feature supported 支持特征
+
+feature user-ID 特征用户标识码
+
+Federal Information Processing 联邦信息处理标准
+
+Standards(FIPS)
+
+Federal Information Processing Standards/ 联邦信息处理标准／空间数据转换标准
+
+Spatial Data Transfer Standard；FIPS/SDTS
+
+field ［数据］域
+
+file ［计算机］文件
+
+file activity 文件活动
+
+file attribute 文件属性
+
+file compression 文件压缩
+
+file format 文件格式
+
+file fragmentation 文件分段存储
+
+file indexing 文件管理索引
+
+file integrity 文件完整性
+
+file name extension 文件扩展名
+
+file name 文件名
+
+file protection 文件保护
+
+file server protocol 文件服务器协议
+
+file server 文件服务器
+
+file set 文件集
+
+file specification 文件说明；文件说明表
+
+file structure 文件结构
+
+file system 文件系统
+
+File Transfer Protocol 文件传输协议
+
+file transfer 文件转换
+
+file-by-file compression 文件压缩
+
+filename extension 文件后缀名
+
+fill pattern 填充模式
+
+fixed length record format 定长记录格式
+
+flag 标志；特征
+
+flair point 识别点；明显地物点
+
+flap 叠置
+
+floppy disk；floppy 软盘
+
+form line 地表形态线
+
+format conversion 格式转换
+
+format line 格式行
+
+format model 格式模型
+
+format 格式
+
+formatted model 格式化模型
+
+formatting function 格式化函数；格式编排
+
+G
+auss plane coordinate 高斯平面坐标
+
+Gauss-Kruger coordinate 高斯－克吕格坐标
+
+Gauss-Kruger grid 高斯－克吕格格网
+
+Gauss-Kruger map projection 高斯－克吕格地图投影
+
+Gaussian coordinate 高斯坐标
+
+gazetteer 地名录
+
+general scale 基本比例尺
+
+generic term 地理通名
+
+Geo Based Information System 基于地学的信息系统
+
+geo-analysis 地理分析
+
+geo-defined unit 地理定义单元
+
+geo-distribution 地理分布
+
+geo-politic data base 行政区划数据库
+
+geo-referenced information system 地理参考信息系统
+
+geobase system 地区系统
+
+geobased information system 地区信息系统
+
+geobase 地区库
+
+geobotanical cartography 地植物学制图
+
+geocartography 地理制图
+
+geocoded virtual map 地理编码虚拟图
+
+geocodes 地理编码
+
+formatting 格式化
+
+formfeed 换页；格式馈给
+
+forms interface 格式界面
+
+forms processing 表格处理
+
+fractal 分数的；分形；分数维
+
+fractional map scale 分数地图比例尺
+
+fractional scale 分数比例尺
+
+frequency band 频段；频带
+
+frequency bias 频偏
+
+frequency curve 频率曲线
+
+frequency demodulation 鉴频
+
+frequency distribution 频率分布
+
+full-resolution picture 全精度影（图）象，高分辨率影（图）象
+
+fully concatenated key 全连串码
+
+fully digital mapping 全数字化制图
+
+function library 功能库
+
+functional data base 功能数据库
+
+functional mapping 功能制图
+
+functional structure 功能结构
+
+fuzzy analysis 模糊分析
+
+fuzzy C-means 模糊聚类法
+
+fuzzy classifier method 模糊分类法
+
+fuzzy distance 模糊距离
+
+fuzzy intersection concept 模糊交叉概念
+
+fuzzy tolerance 模糊容限
+
+fuzzy 模糊的；失真的
+
+geocode 地理编码
+
+geocoding system 地理编码系统
+
+geocoding 地理编码
+
+Geographer's Line 地理坐标网
+
+geographic aggregation 地理聚合
+
+Geographic Analysis and Display System(GADS) 地理分析显示系统
+
+Geographic Analysis Package(GAP) 地理分析软件
+
+geographic analysis/modeling capability 地理分析／模拟能力
+
+geographic analysis 地理分析
+
+geographic area boundaries 地理面积边界
+
+Geographic Area Code Index(GACI) 地理面积编码索引
+
+Geographic Base File(GBF) 地理基础文件
+
+Geographic Base File/Dual 地理底图基础文件／双重独立地图编码
+
+Independent Map Encoding(GBF-DIME)
+
+Geographic Base Information System(GBIS) 地理基础信息系统
+
+Geographic Base System(GBS) 地理基础系统
+
+geographic boundaries 地理边界
+
+geographic boundary data 地理边界数据
+
+geographic calibration 地理标准
+
+geographic center 地理中心
+
+geographic classification 地理分类
+
+geographic codes 地理坐标码
+
+geographic coding 地理编码
+
+geographic coordinates 地理坐标
+
+geographic coordinate 地理坐标
+
+geographic coverage 地理层
+
+geographic data base 地理数据库
+
+geographic data set 地理数据集
+
+geographic data structure 地理数据结构
+
+Geographic Database 地理数据库
+
+geographic data 地理数据
+
+geographic display system 地理显示系统
+
+geographic entity 地理实体
+
+geographic feature data 地理特征数据
+
+geographic feature 地理特征
+
+geographic graticule 地理坐标网
+
+geographic grid 地理网格
+
+geographic identifiers 地理标识符
+
+geographic indexed file 地理索引文件
+
+geographic indexes 地理索引
+
+geographic information system 地理信息系统
+
+geographic inverse 地理位置反算
+
+geographic landscape 地理景观
+
+geographic latitude 地理纬度
+
+geographic location 地理位置
+
+geographic longitude 地理经度
+
+geographic meridian 地理子午线
+
+geographic modeling 地理模拟
+
+geographic name 地理名称
+
+geographic net 地理坐标格网
+
+geographic numbering system 地理编号系统
+
+geographic object 地理对象
+
+geographic pole 地极
+
+geographic position 地理位置
+
+geographic reference system 地理参考系统
+
+geographic reference 地理参考
+
+geographic referencing 地理参考过程
+
+geographic standardization 地理标准化
+
+geographic survey 地理测量
+
+geographic value 地理坐标值
+
+geographical coordinate 地理坐标
+
+geographical data base 地理数据库
+
+geographical general name 地理通名
+
+geographical map 地理图
+
+geographical mile 地理海哩
+
+geographical name index 地名索引
+
+transcription；geographical 地名注音法
+
+name transliteration
+
+geographical name；place name 地名
+
+geographical network 地理格网
+
+geographical pole 地极
+
+geographical position 地理位置
+
+geographical reference system 地理坐标参考系
+
+geographical viewing distance 地理视距
+
+geographical zones 地理带
+
+geographical-exploration traverse 地理勘测路线
+
+geographical 地理的
+
+geographics limits 细线；内图廓线
+
+geographic 地理的；地理学的
+
+geography 地理学
+
+Geomatics （加拿大）地球信息学
+
+geometric rectification 几何校正
+
+geometric registration 几何配准
+
+geomorphic map 地貌类型图
+
+geomorphological mapping 地貌制图
+
+geomorphological map 地貌图
+
+geomorphology 地貌学
+
+geoprocessing application 地理处理应用
+
+geoprocessing approach 地理处理方法
+
+geoprocessing functions 地理处理函数
+
+geoprocessing modeling 地理处理模拟
+
+geoprocessing operations 地理处理操作
+
+geoprocessing productivity 地理处理率
+
+geoprocessing system 地理处理系统
+
+geoprocessing virtual map system 地理处理虚拟图系统
+
+Geoprocessing(GP) 地理处理过程
+
+geoprocessor 地理处理器
+
+GEOREF coordinate system 世界地理坐标参考系
+
+GEOREF grid 世界地理坐标参考网格
+
+georeference system 地理坐标参考系
+
+georeference 地理坐标参考
+
+georeferenced 地理坐标参考的
+
+georeferencing 地理坐标参考过程
+
+GEOREF 世界地理坐标参考系
+
+georelational model 地理相关模型
+
+geosphere 地理圈
+
+geostatistics 地理统计
+
+GIS/LIS 地理信息系统／土地信息系统
+
+Global Environmental Monitoring System(UNEP) 全球环境监测系统（联合国环境项目）
+
+global land information system(GLIS) 全球土地信息系统
+
+Global Positioning System(GPS) 全球定位系统
+
+global positioning 全球定位
+
+global rediation 总辐射
+
+global satellite system 全球卫星系统
+
+Global Telecommunications System 全球远程通讯系统
+
+global 全球的
+
+graphic compose 图形合成
+
+graphic data base file 图形数据库文件
+
+graphic data base 图形数据库
+
+graphic data concept 图形数据概念
+
+graphic illustration 图解说明；图解例证
+
+graphic input procedure 图形输入法
+
+graphic input unit 图形输入设备
+
+Graphic Interchange Format 图形交换格式
+
+graphic interpolation 图解内插法
+
+graphic limits 图形边界
+
+graphic manipulation 图形维护
+
+graphic map features 图示地图特征
+
+graphic map manipulation 图示地图操作
+
+graphic map scale 图解地图比例尺
+
+graphic mapping control point 图解图根点
+
+graphic menu 图示菜单
+
+graphic modes 图示模式
+
+graphic object 图形对象
+
+graphic output unit 图形输出设备
+
+graphic overlay 图形叠加
+
+graphic plane 图示面
+
+graphic primitive 图形元素
+
+graphic presentation 图形显示
+
+graphic production 图形生成
+
+graphic product 图形产品
+
+graphic rectification 图形校正
+
+graphic representation 图形表示
+
+graphic scale 图解比例尺
+
+graphic sign 图形记号
+
+graphic superimposition 图形叠加
+
+graphic symbol 图形符号
+
+graphic symbols/symbology 图形符号／符号表示
+
+graphic system components 图形系统组成
+
+graphic tablet 图形数字化板
+
+graphic terminal 图形终端
+
+graphic text string 图形文本串
+
+graphic trace 图形跟踪
+
+graphic variable 图形变量
+
+graphical screen interface 图形屏幕界面
+
+graphical user interface(GUI) 图形用户界面
+
+graphics accelerator 图形加速卡
+
+graphics cursor 图形光标
+
+graphics display units 图形显示单元
+
+graphics inquiry 图形查询
+
+graphics languages 图形语言
+
+graphics mode 图形模式
+
+graphics page 图形页
+
+Graphics Performance Characterization(GPC) 图形工作特性
+
+graphics resolution 图形分辨率
+
+graphics screen 图形屏幕界面
+
+graphics software 图形软件
+
+graphics tablet 图形数字化板
+
+graphics 图形
+
+graphic 图形的；图示的
+
+graph 图；图形
+
+graticule 格网
+
+graticule 十字丝；地理坐标网
+
+grating 光栅
+
+grid 格网
+
+grid amplitude 格网幅度
+
+grid azimuth 坐标方位角
+
+grid bearing 坐标方位角
+
+grid cell 格网元素；网眼
+
+grid cell compositing 网眼组成
+
+grid cell data structure 网眼数据结构
+
+grid cell data 网眼数据结构
+
+grid cell lattice 三维网眼格数据结构
+
+grid cell map-record format 网眼地图记录格式
+
+grid cell map 网眼地图
+
+grid cell modeling 网眼模拟
+
+grid cell search 网眼搜寻
+
+grid convergence 坐标纵线收敛角
+
+grid coordinate system 格网坐标系
+
+grid coordinates 格网坐标系
+
+grid data 格网数据
+
+grid declination 格网真北偏角
+
+grid equator 格网赤道
+
+grid factor 格网因子
+
+grid format 格网格式
+
+grid interval 网格间距
+
+grid inverse 网格反算
+
+grid length 坐标网距
+
+grid lines/codes 格网线／码
+
+grid magnetic angle 格网磁偏角
+
+grid map 格网地图
+
+grid meridian 坐标网纵线
+
+grid method 格网法
+
+grid of neighboring zone 邻带方里网
+
+grid origin 坐标格网原点
+
+grid structure 网格结构
+
+grid system 格网系统
+
+grid tick 格网标记
+
+grid variation 格网磁偏角
+
+grid zone 坐标带
+
+grid 栅格，格网；坐标网
+
+grid-point method 网点板法
+
+grid/raster data 格网／栅格数据
+
+gridded data 格网数据
+
+gridiron layout 格网平面图
+
+gridiron pattern 格网图形
+
+gridsystem 直角坐标格网
+
+grips 数据转换程序
+
+H
+halftone screen 半色调屏幕
+
+header file 头文件
+
+header label 头标
+
+header line 标题行
+
+header record 首记录
+
+header 标题
+
+hextree 分级图象数据模型
+
+hidden attribute 隐含属性
+
+hidden file 隐含文件
+
+hidden line removal 隐线消除
+
+hidden surfaces 隐面
+
+hidden variable 隐含变量
+
+hierarchical data base 分级数据库
+
+hierarchical data 分级数据
+
+hierarchical data model 层次数据模型
+
+hierarchical data structure 分级数据结构
+
+hierarchical database 分层数据库
+
+hierarchical districts 层次分区
+
+hierarchical file structure 分级文件结构
+
+hierarchical file system 分级文件系统
+
+hierarchical model 分级模型
+
+hierarchical organization 等级结构
+
+hierarchical relationship 分级关系式（数据文件结构）
+
+hierarchical sequence 层次序列
+
+hierarchical spatial relationship 分级空间关系
+
+hierarchical storage 分级存储
+
+hierarchical structure 分级结构
+
+hierarchical 分级的；层次的
+
+hierarchization 分级
+
+High Level Data Link Control 高级数据连接控制
+
+High Memory Area 高位地址内存区
+
+histogram 直方图；柱状图；频率图
+
+history 命令记录
+
+Huffman code 霍夫编码
+
+hull TIN表面
+
+Human Computer Interaction 人机交互
+
+Human Computer Interface 人机界面
+
+hypertext 电子文本；超级文本
+
+I
+I channel 同相信道；I通路
+
+I notation parameter 整数记号参数
+
+I-beam I指针
+
+I/O addresses 输入／输出地址
+
+I/O Character Recognition(I/O CR) 输入／输出字符识别
+
+I/O error 输入／输出错误
+
+I/O port 输入／输出端口
+
+image coding 图象编码
+
+image compression 影（图）象压缩
+
+image contrast 影象反差
+
+image coordinate 影象坐标
+
+image correlation 影象相关
+
+image data base 影象数据库
+
+image data collection 图象数据收集
+
+image data compaction 图象数据压缩
+
+image data retrieval 图象数据检索
+
+image data storage 图象数据存储
+
+image data 影（图）象数据
+
+image definition 影象清晰度（分辨力）
+
+image degradation 影（图）象退化；影（图）象衰减
+
+image description 影象描绘
+
+image digitization 图象数字化
+
+image displacement 影象位移
+
+image distortion 影（图）象失真
+
+image integrator 图象综合
+
+image intensifier 影（图）象增强器；变象管；象亮化器
+
+image intensity 图象强度
+
+image interpretation 影象判读
+
+image magnification 影（图）象放大
+
+image matching 影象匹配
+
+image processing rectification 图象处理校正复原
+
+and restoration
+
+image processing 图象处理校正复原
+
+image ray 象点投影线
+
+image recognition 影（图）象识别
+
+image reconstruction 影（图）象重建
+
+image reconstructor 影象再现装置
+
+image registration 图象配准
+
+image representation 影（图）象显示；影（图）象再现
+
+image resolution；ground resolution 影象分辨力
+
+image scale 影象比例尺
+
+image size 影（图）象尺寸；影（图）象范围
+
+image space coordinate system 象空间坐标系
+
+image space 象空间
+
+image stack 影（图）象栈
+
+image transform 影（图）象变换
+
+image transformation 图象变换
+
+image translator 影（图）象转换器
+
+image；imagery 影象
+
+image 象，象片；影象，图象；镜象图形
+
+imagery feature 影象特征
+
+index to Names 地名索引
+
+indexed sequential file 顺序索引文件
+
+indexed 索引化的
+
+indexing 索引；加下标；变址
+
+index 指标；指数；索引
+
+informatics 信息学
+
+information area 信息区
+
+information bit 信息位
+
+information center 信息中心
+
+information collection 信息采集
+
+information content 信息量
+
+information explosion 信息爆炸
+
+information extraction 信息提取
+
+information float 信息浮动
+
+information format 信息格式
+
+information management 信息管理
+
+information network 信息网
+
+information overlays 信息叠加
+
+information rate 信息传输速率
+
+Information requirement(IR) 请求信息
+
+information revolution 信息革命
+
+information science 信息科学
+
+information system 信息系统
+
+information technology(IT) 信息技术
+
+information theory 信息论
+
+information window 信息窗口
+
+infowmation 信息
+
+input area 输入区
+
+input data 输入数据
+
+input device 输入设备
+
+input image(inimage) 输入影（图）象
+
+input/output analysis 输入／输出分析
+
+input/outpu model 输入／输出模型
+
+Input/Output(I/O) 输入／输出
+
+input 输入
+
+inquiry 查询
+
+insert 插入；嵌入
+
+integrated data base 集成数据库
+
+integrated data layer 集成数据层
+
+Integrated Geographical Information System 集成化地理信息系统
+
+integrated GIS/technologies 综合地理信息系统／技术
+
+integrated information system 综合信息系统
+
+integrated spatial system 综合空间信息系统
+
+integrated system 综合系统
+
+interactive 交互式
+
+interactive digitizing 人机交互数字化
+
+interactive display 人机交互显示
+
+interactive drafting 交互式绘图
+
+interactive editing 交互式编辑
+
+Interactive Graphics and Retrieval System 交互图形与恢复系统
+
+Interactive Graphics Design System 交互式图形设计系统
+
+Interactive Graphics System/Interactive 交互式制图系统／交互式制图子系统
+
+Graphics Subsystem；IGS/IGSS
+
+interactive graphics 交互式制图
+
+interactive image processing system 人机对话影（图）象处理系统
+
+interactive mode 交互式模式
+
+Interactive Multimedia 交互式多媒体
+
+interactive processing mode 人机交互模式
+
+interactive processing 人机交互处理
+
+interactive processing 交互式处理
+
+interactive restoration 人机对话复原
+
+Interactive Surface Modeling 交互式地表建摸
+
+interactive topology 交互式拓扑
+
+Interactive Volume Modeling 交互式立体模型
+
+intercell plot 单元间图（或文件）
+
+interchange format 交换格式
+
+interchange modeling 交换模拟
+
+interchange model 交换模型
+
+internal data model 内部数据模型
+
+internal data structure 内部数据结构（只在处理过程中保持的）
+
+internal database file 内部数据库文件
+
+interrecord data structures 交互记录的数据结构
+
+inverse fast Fourier transform 快速傅立叶变换
+
+isoline 等值线
+
+isolith 等厚度线
+
+isolong 等经度改正线
+
+isomagnetic chart 等磁力线图
+
+isometric coordinate 等量坐标
+
+isometric design 等角投影
+
+isometric latitued 等量纬度
+
+isometric map projection 等量地图投影
+
+isometric mapping 等量制图
+
+isoperimetric map projection 等量地图投影
+
+isoplane 等平面
+
+isopleth mapping 等值线制图
+
+isopleth map 等值线图
+
+isoplethic mapping 等值线制图
+
+isoplethic map 等值线图
+
+isopleth 等值线
+
+K
+key 关键字
+
+key attributes 关键属性
+
+key bed 标准层
+
+key entry 键盘输入
+
+key feedback area 码反馈区
+
+key field 关键字段
+
+key file 关键文件
+
+key horizon 标志层
+
+key identifiers 关键标识符
+
+key map 索引图；总图
+
+key pad 键座
+
+key value dictionary 关键值索引
+
+key variable indexing 关键变量索引
+
+keyboard buffer 键盘缓冲
+
+keyboard equivalent key 键盘等价命令键
+
+keyboard shortcut 键盘快捷命令
+
+keyboard 键盘
+
+L
+land evaluation 土地评价
+
+Land Information System(LIS) 土地信息系统
+
+Land Information Technology(LIT) 土地信息技术
+
+land types 土地类型
+
+land unit 土地单元
+
+land use 土地利用
+
+landform 地表形态
+
+landscape drawings 景观绘图
+
+landscape map 景观地图
+
+layer file 层文件
+
+layer index 图层索引
+
+layer index 层索引
+
+layer system 分层设色法
+
+layer-tinted map 分层设色地图
+
+layered style map 分层设色地图
+
+layered style 分层设色表示法
+
+layering 分层；层化
+
+layers 层次
+
+layer 层
+
+layover 覆盖；遮蔽（雷达影像）
+
+Leaf Area Index 叶区域索引
+
+leaf level 叶层次
+
+league 里格
+
+leaking polygon 未闭合多边形
+
+legend 图例
+
+lettering 地图注记
+
+lineage 数据说明
+
+line element 线状要素
+
+line feature 线状特征
+
+line follower 线跟踪器（量测转换边界）
+
+line generalization 趋势线概化
+
+line graph 线状图
+
+line in polygon calculation 多边形内线判断计算
+
+line in polygon retrieval 多边形内线判断查询
+
+line intersection 线段交叉
+
+line map 线画图
+
+line of nodes 交轨线
+
+line symbologics 线状符号表达法
+
+line symbol 线状符号
+
+local database 局域数据库
+
+local datum 局部定标数据
+
+logical block 逻辑块
+
+logical channel number 逻辑通道号码
+
+logical consistency 逻辑一致性
+
+logical contouring 逻辑恒直线
+
+logical data base(LDB) 逻辑数据库
+
+logical data model 逻辑数据模型
+
+logical data structure 逻辑数据结构
+
+logical decision 逻辑判定
+
+logical design 逻辑设计
+
+logical exclusive operation of image 影象逻辑异运算
+
+logical expression 逻辑表达
+
+logical links 逻辑连接
+
+logical mounting 逻辑安装
+
+logical name 逻辑名字
+
+logical operation 逻辑运算
+
+logical operator 逻辑运算符
+
+logical order 逻辑指令
+
+logical overlap 逻辑重叠
+
+logical record 逻辑记录
+
+logical security 逻辑安全性
+
+logical selection 逻辑选择
+
+logical storage structure 逻辑存储结构
+
+logical unit 逻辑单元
+
+logic 逻辑
+
+login (=logon)注册
+
+lot and block 地块与街段
+
+lot dimensions 地块尺寸
+
+lot line 地块边界
+
+lot of record 地块记录
+
+lot 地块
+
+LPT port 并行口
+
+LU pooling 逻辑单元合并
+
+M
+machine bias 机器偏差
+
+machine code 机器码
+
+machine encoding 机器编码
+
+machine language 机器语言
+
+machine processable 机器可处理的
+
+man-machine interface 人机接口
+
+manager access 管理者存取
+
+manual digitizer 手扶数字化器
+
+manual digitizing 人工数字化
+
+manual encoding 人工编码
+
+manual link 人工连接
+
+manual map enhancement 人工地图增强
+
+manuscript map 原图；稿图
+
+manuscript 原图
+
+many-to-one relate 多对一关系
+
+map accuracy (absolute) 绝对地图精度
+
+map accuracy (relative) 相对地图精度
+
+map accuracy level 地图精度水平
+
+map accuracy specifications 地图精度说明
+
+map accuracy standards 地图精度标准
+
+map adjustment 地图接边；图幅接边
+
+map algebra 地图代数
+
+Map and Chart Data Interchange 地图与图表间数据交换
+
+map appearance 地图整饰
+
+map average 地形特征地图
+
+map black clouds 地图数据密集区
+
+map border 图廓
+
+map chart 作战海图
+
+map clarity 地图清晰性
+
+map closure 地图闭合
+
+map code （１）地图代码；（２）变换码，印象码
+
+map collar data 地图边缘数据
+
+map color atlas 地图色谱
+
+map compilation 地图编绘
+
+map complexity 地图复杂性
+
+map composition 地图编制
+
+map computerization 地图计算机化
+
+map coverage 地图层
+
+map data base 地图数据库
+
+map data retrieval 地图数据查询
+
+map data structure 地图数据结构
+
+map data 地图数据
+
+map decoration 地图整饰
+
+map deformation 地图变形
+
+map description 地图描述
+
+map digitization 地图数字化
+
+map digitizing 地图数字化
+
+map directory 地图目录
+
+map display 地图显示
+
+map distortion 地图畸变
+
+map distribution 地图供应
+
+map edge 图幅边缘
+
+map editing 地图编辑
+
+map extent 地图范围
+
+map face 图幅尺寸；图幅面积
+
+map feature 地图特征
+
+map files 地图文件
+
+map generalization 地图综合
+
+map graphics to text data linkage 图形－文本数据连接
+
+map graphics 图形－文本数据连接
+
+map grid 地图格网
+
+map information 地图信息
+
+map interpretation 地图判读
+
+map join 图幅连接
+
+map layer 图层
+
+map layout 图面配置
+
+map legibility 地图易读性
+
+map limits 图范围
+
+map linkage 图连接
+
+map load 地图负载量
+
+map making 制图
+
+map matching guidance 地图匹配导航
+
+map matching 地图匹配
+
+map measure 量图轨
+
+map miles 地图英里坐标系统
+
+map model system 地图模型系统
+
+map nadir 图面底点
+
+map name 地图名
+
+map of neotectonic strength 图上量算
+
+map origin 图坐标原点
+
+map overlay analysis 地图叠置分析
+
+map overlay modeling analysis 地图叠置模拟分析
+
+map overlay 地图叠置
+
+map parallel 图横线
+
+map perception 地图感受
+
+map plotting 填图
+
+map point 图上定位点；图面点
+
+map positional file 地图叠置文件
+
+map position 地图定位
+
+map projection system 地图投影系统
+
+map projection transformation 地图投影转换
+
+map projection 地图投影
+
+map projector 地图投影仪
+
+map quadrangle/map quad 地图标准图幅
+
+map query 地图查询
+
+map reading 读图
+
+map registration 地图对齐
+
+map representation file 地图表示文件
+
+map resolution 地图分辨率
+
+map revision 地图更新
+
+map scale number 地图比例尺数
+
+map scale 地图比例尺
+
+map scaling 地图比例变换
+
+map section 图区
+
+map series 系列地图
+
+map set miles 图集英里比例尺
+
+map sheet manipulation 图幅操作
+
+map sheet 图幅
+
+map shift 图幅移位
+
+map sliver 地图细小多边形
+
+map specifications 地图规范
+
+map standards 地图标准
+
+map substitute 临时版地图
+
+map symbolism 地图符号体系
+
+map symbol 地图符号
+
+map systematic errors 地图系统误差
+
+map test 地图检测
+
+map theme 地图专题
+
+map title 图名
+
+map tolerance 地图容限
+
+map transformation 地图转换
+
+map types 地图类型
+
+map unit tolerance 地图单位容限
+
+map units 地图单位容限
+
+map use 地图利用
+
+map zoom 地图放大
+
+map 地图
+
+map-controlled mosaic 地图控制镶嵌图
+
+map-grid 地图格网
+
+map-matching guidance 地图匹配指导
+
+map-projection aspect 地图投影轴
+
+map-to-page transformation 地图－页变换
+
+mapland 制图地区
+
+mapping accuracy standards 制图精度标准
+
+mapping accuracy 制图精度
+
+mapping angle （子午线）收敛角
+
+mapping control 图根控制
+
+mapping control point 图根点
+
+Mapping Data Interchange Format (MDIF) 制图数据交换格式
+
+Mapping Information Management System (MIMS) 制图信息管理系统
+
+mapping 制图；测图
+
+MAPSAT 制图卫星
+
+mapsheet 图幅
+
+marginal data 图廓资料
+
+margin 边缘；图边；页边；空白
+
+master map projection 母型投影
+
+master model 立体地图原型
+
+medium 媒体；中等的
+
+megabit ram 兆字节存储器
+
+menu bar 菜单条
+
+menu box 菜单盒
+
+menu button 菜单按钮
+
+menu icons 菜单图标
+
+menu item 菜单项
+
+menu mark 菜单符号
+
+menu origin 菜单原点
+
+menu tablet 菜单输入板
+
+menu title 菜单标题
+
+menu-controlled program 特征码清单控制程序
+
+menu 清单；菜单
+
+minimum access time 最小存取时间
+
+minimum boundary rectangle 最小边界矩形
+
+minimum distance classification 最短距离分类
+
+minimum distance routing 最短距离选择
+
+minimum mapping units 最小制图单元
+
+minimum path network 最短路网
+
+minimum path tree 最短路径树
+
+modular software 模块化软件
+
+modular 模数的；模块的
+
+Modulator；DEM modulator 数字地面模型模块
+
+module field 模块区（空间数据转换）
+
+multi-media 多媒体
+
+multimedia GIS 多媒体GIS
+
+multimedia systems 多媒体系统
+
+multimedia 多媒体
+
+multiuser 多用户
+
+N
+native code 本机语言
+
+native map 本土地图
+
+natural resource data 自然资源数据
+
+network analysis 网络分析
+
+network architecture 网络结构
+
+network basefile system 网络基本文件系统
+
+netwok chain 网络链
+
+network data 网络数据
+
+network data model 网络数据模型
+
+network database 网络数据库
+
+Network File Server 网络文件服务器
+
+Network File System(NFS) 网络文件系统
+
+Network Interface Card 网络接口卡
+
+network layer 网络层
+
+network model 网状模型
+
+Network Operating System 网络操作系统
+
+network protocol 网络协议
+
+network simulation 网络模拟
+
+network structure 网络结构
+
+neutral networks 神经网络
+
+neutral net 神经网络
+
+non-graphic attribute 非图形属性
+
+non-graphic information 非图形信息
+
+nongeographic information 非地理信息
+
+O
+obel 三维象素
+
+object class 对象分类
+
+oject code 结果代码
+
+object language 目标语言；结果语言
+
+Object Linking and Embedding (OLE) 对象的链接和嵌入
+
+Object Oriented Database(OODB) 面向对象数据库
+
+Object Oriented Programming Language (OOPL) 面向对象程序设计语言
+
+Object Oriented Programming System (OOPS) 面向对象程序设计系统
+
+Object Oriented Programming (OOP) 面向对象程序设计
+
+Object Oriented (OO) 面向对象的
+
+object plane 物平面
+
+object program 目标程序；结果程序
+
+object snap override 目标捕捉超载
+
+object snap；Osnap 目标捕捉
+
+object space coordinate system 物空间坐标系
+
+object space 物空间
+
+object type 目标类型
+
+object-oriented 面向对象的
+
+T
+tab key 跳格键
+
+table coordinates 板坐标系统（数字化板；绘图仪等）
+
+tablet menu （计算机辅助制图）图表菜单
+
+tablet 数字化板；菜单板
+
+tabular analysis 图表分析
+
+tabular data concept 图表数据概念
+
+tabular data update 图表数据更新
+
+tabular data 图表数据
+
+tabulated surface 由路径和方向矢量定义的曲面
+
+Tagged Image File Format 标记图象文件格式
+
+tagging 1、标识多边形；2、建立图形－属性联结
+
+target column 目标列
+
+targe point 目标点
+
+target recognition 目标识别（辨认）
+
+taxonomy 分类体系
+
+TCP/IP Transmission Control TCP/IP传输控制
+
+teachtext 软件指导文本
+
+team leader （TL） 数据传送负责人
+
+team member （TM） 负责数据传送的人
+
+Technical and Office Protocol 技术人员与办公室协议（一种局域网协议）
+
+technical evaluation 技术评价
+
+technical-level GIS committee 地理信息系统技术委员会
+
+teference data 参照数据
+
+Telecommunication Access Method 远程通讯获取方法
+
+telecommunications control 远程通信控制
+
+telecommunications 远程通信；电信
+
+telecommuting 远程通信
+
+Teleprocessing monitor 远程处理终端
+
+teleprocessing 远程信息处理
+
+temporal 时态的；时序的
+
+temporal data base 时态数据库
+
+temporal data location 时态数据定位
+
+temporal detail 时态细目
+
+temporal dimension 时态尺度
+
+temporal domain 时态域
+
+temporal file 暂存文件；废文件
+
+temporal grid 时态格网结构
+
+temporal resolution 时间分辨率
+
+temporal viewing lattice 暂时视图格网
+
+temporary storage 暂存器；中间存储器
+
+terminal security 终端安全性
+
+terminal server 终端服务器
+
+Terminate and Stay Residen program (TSR) 常驻内存程序
+
+text 正文；文本
+
+text angle 文本旋置角
+
+text area 文本区
+
+Text Attribute Table (TAT) 文本属性表
+
+text attributes 文本属性
+
+text box 文本对话框
+
+text data entry/edit 文本数据输入／编辑
+
+text data retrieval 文本数据查询
+
+text data storage 文本数据存储
+
+text data 文本数据
+
+text duplicate pointer 文本复写指针
+
+text editor 文本编辑程序
+
+text element 文本要素
+
+text entry and label placement 注记输入与标点放置
+
+text envelope 文本框
+
+text field 文本字段
+
+text file 文本文件
+
+text font 文本字符
+
+text management 文本管理
+
+text move pointer 文本移动指针
+
+text node 文本节点
+
+text object 文本对象
+
+text pane 文本窗
+
+text placement/setup 文本设置
+
+text position 文本位置
+
+text property 文本属性
+
+text rectangle 文本框
+
+text style 文本样式
+
+text symbol 文本表征
+
+text window 文本窗
+
+thematic attriute 专题属性
+
+thematic data 专题数据
+
+thematic map:dot-density and 专题地图:点密度图或比例填充图
+
+proportional fills
+
+thematic map:ranged fill 专题地图:域值填充图
+
+thematic mapping 专题制图
+
+thematic topics 专题论题
+
+theme image 专题图
+
+theme 专题
+
+Triangulated Irregular Network (TIN) 不规则三角网
+
+tinting method 分层设色法
+
+topographic feature 地形要素；地面目标
+
+topographic form 地形特征；地貌形态
+
+gopographic landform 地形
+
+topographic latitude 地形纬度
+
+topographic map symbols 地形图图式
+
+topographic map 地形图
+
+topographic plot 地形测图
+
+topographic relief map 地势图
+
+topographical database 地形数据库
+
+topologic errors 拓扑误差
+
+topological analysis method 拓扑分析法
+
+topological codes 拓扑码
+
+topological coding 拓扑编码
+
+topological data 拓扑数据
+
+topological errors 拓扑误差
+
+topological features 拓扑特性
+
+topological map 拓扑地图
+
+topological model of spaces 空间拓扑模型
+
+topological notation 拓扑注记
+
+toplogical overlay 拓扑叠加
+
+topological properties 拓扑特征
+
+topological relationships 拓扑关系
+
+topological retrieval 拓扑检索
+
+topological space 拓扑空间
+
+topological structure 拓扑结构
+
+topological transformation 拓扑变形
+
+topological verification 拓扑关系验证
+
+Topologically Integrated Geographic 拓扑集成地理编码参照（格式）
+
+Encoding Referencing
+
+topologically linked database 拓扑关系联系的数据库
+
+topologically structured data 具有拓扑结构的数据
+
+topologic 拓扑的
+
+topology generation 拓扑关系生成
+
+toponym 地名
+
+TP monitor 远程处理终端
+
+tracing digitizing 跟踪数字化
+
+trailer record 尾部记录
+
+trajectory 轨道；弹道；轨迹
+
+transact-SQL 事务处理查询语言
+
+transaction log 事务处理记录
+
+transaction control 事务处理控制
+
+transaction management 事务处理管理
+
+transaction processing 事务处理
+
+transactional data base 事务处理数据库
+
+transactional library 事务处理图库
+
+transaction 事务处理；交易
+
+transacoder 代码转换机
+
+Transcontinental Triangulation Datum 横贯大陆三角测量基准
+
+transcriber 转点仪；信息转换器
+
+transducer 传感器；转录程序
+
+transfer construct 转换结构
+
+transfer format 转换格式
+
+transfer function 转换函数
+
+transfer media 转换媒介
+
+Transfer of Development Rights (TDR) 开发权转让
+
+transfer rate 转换率
+
+transfer station 转换点
+
+transferability 可转换性
+
+transform fault 转换断层
+
+transformation program 转换程序
+
+transformation 换算；变换
+
+Transformed Vegetation Index or TVI 变换植被指数
+
+transform 换算；变换；转化
+
+transmission block 传输信息块
+
+Transmission Control Protocol/Internet 传输控制协议／网际协议
+
+Protocol
+
+Transmission Control Unit 传输控制单元
+
+transmission grid 传输网
+
+transmission 传送
+
+triangular digitalterrain model 三角网数字地形模型
+
+triangular excess 三角形角超
+
+Truevision advanced Raster 彩色图象转换格式
+
+Graphics Adapter file (TARGA file)
+
+U
+UCS icon 用户坐标系图标
+
+unidimensional magnification 一维放大
+
+Unified Customer Interface 统一化用户界面
+
+Unified Data Language 统一化数据语言
+
+unit fact 数据项
+
+unite image 影象联合
+
+Urban Information System (UIS) 城市信息系统
+
+Urban Management Information System (UMIS) 城市管理信息系统
+
+Urban Data Management System (UDMS) 城市数据管理系统
+
+urban mapping 城市制图
+
+use plat 利用情况地籍图
+
+User Authorization File 用户授权文件
+
+user command 用户指令
+
+User Coordinate System (UCS) 用户坐标系
+
+user definable keys 用户定义功能键
+
+user file directory (UFD) 用户文件目录
+
+User Identification Code 用户识别代码
+
+User Identification 用户标识码
+
+user interface routines 用户界面程序
+
+user interface 用户界面
+
+User Network Interface 用户网络接口
+
+User Requirement Analysis 用户需求分析
+
+user segment （全球定位系统）用户段
+
+user training 用户培训
+
+User Work Area 用户工作区
+
+user-defined data type 用户定义的数据类型
+
+user-defined transaction 用户定义事务
+
+user-ID 用户标识码
+
+user 涌
+
+utilities 公共设施
+
+utility network maps 公共设施网络图
+
+V
+vector analysis 矢量分析
+
+vector data model 矢量数据模型
+
+vector data structure 矢量数据结构
+
+vector data 矢量数据
+
+vector description 矢量描述
+
+vector differentiation 矢量微分
+
+vertor elements 矢量数据
+
+vector font or outline font 矢量点阵字符
+
+vector graphics 矢量图形
+
+vector integration 矢量积分
+
+vector plotting 矢量绘图
+
+Vector Product format 矢量数据产品格式
+
+Vector Relational format 矢量数据关系格式
+
+vector representation 矢量表示
+
+vector to cell conversion 矢量－像元转换
+
+vector to raster conversion 矢量－栅格转换
+
+vector topology 矢量拓扑
+
+vectorial angle 向量角
+
+vectorise 矢量化
+
+vectorization 矢量化
+
+vectors 矢量
+
+vector 矢量；幅；导航
+
+vegetation map 植被图
+
+versatile data structure 通用数据结构
+
+versatile user interface 多用途用户接口
+
+versioning 有版本
+
+version 版本
+
+very high-level programming languages 超高级程序语言
+
+Voronoi polygons；Thiessen polygons 冯罗诺多边形
+
+Work Print Generation 制图计划与所需材料清单
+
+W
+work print 工作图
+
+working aperture 工作孔径
+
+working data version 工作数据版本
+
+working directory 工作目录
+
+working drawings 施工图
+
+world coordinate system (WCS) 世界坐标系
+
+world coordinate system 世界坐标网
+
+world cordinates 世界坐标
+
+world datum 世界基准
+
+world geodetic system 世界大地基准
+
+World Geographic Reference System 世界地理参照系
+
+wpolygon 多边形窗口
+
+X
+Xerox Network Services XEROX网络服务
+
+Xerox Network systems' Internet XEROX网络系统网际传输协议
+
+Transport Protocol
+
+XGA 扩展图形适配器
+
+Z
+zone 分带；区域；范围；存储区；信息段
+
+zon ing district 城市（县）分区
+
+zon ing map 城市分区图
+
+zon ing map 分带图
+
+Zoom Transfer Scope 缩放变换范围
+
+zoom ing 变焦；放大

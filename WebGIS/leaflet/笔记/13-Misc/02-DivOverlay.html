@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../../src/leaflet/leaflet.css" />
+    <script src="../../src/leaflet/leaflet.js" ></script>
+   
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+
+        var map = L.map('map',{
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           layers: [grayscale]
+       });
+
+       /**
+         * @description: L.Popup和L.Tooltip的基本模型。从中继承自定义弹出窗口（如插件）
+         * @param {*}
+         * @return {*}
+         */
+        
+         map.on('click', function(ev) {
+            alert(ev.latlng); // ev is an event object (MouseEvent in this case)
+        });
+
+        /** 
+
+            Property	        Type	        Description
+            offset	        Point	Point(0, 7)	    The offset of the popup position. Useful to control the anchor of the popup when opening it on some overlays.
+            className	    String	''	A           custom CSS class name to assign to the popup.
+            pane	        String	'popupPane'	    Map pane where the popup will be added.
+        
+        */
+
+    </script>
+</body>
+</html>

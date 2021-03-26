@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+   
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+    
+     // markers图层组; overlays部分
+     var markers = L.layerGroup();
+       L.marker([31.36831352303675, 120.73309421539305]).bindPopup('1').addTo(markers),
+	   L.marker([31.36831352303675, 120.74309421539305]).bindPopup('2').addTo(markers),
+	   L.marker([31.36831352303675, 120.75309421539305]).bindPopup('3').addTo(markers),
+	   L.marker([31.36831352303675, 120.76307421569305]).bindPopup('4').addTo(markers);
+
+
+        var map = L.map('map',{
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           layers: [grayscale, markers]
+       });
+
+    
+       var baseLayers = {
+            "Grayscale": grayscale,
+            "Streets": streets
+        };
+        var overlays = {
+            "markers": markers
+        };
+
+        /**
+         * @description: 图层控件使用户能够在不同的基础层之间切换
+         * @param { <Object> baselayers?, <Object> overlays?, <Control.Layers options> options? }
+         * @return {*}
+         */
+         
+        L.control.layers(baseLayers,overlays,{
+            collapsed: false
+        }).addTo(map);
+
+
+
+
+        // addBaseLayer(<Layer> layer, <String> name)	this	将具有给定名称的基础层（单选按钮项）添加到控件中
+
+        // addOverlay(<Layer> layer, <String> name)	this	
+
+        // removeLayer(<Layer> layer)	this	
+
+        // expand()	this	如果折叠，则展开控制容器。
+
+        // collapse()
+      
+        
+        
+    </script>
+</body>
+</html>

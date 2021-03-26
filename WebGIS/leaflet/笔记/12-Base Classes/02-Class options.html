@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../../src/leaflet/leaflet.css" />
+    <script src="../../src/leaflet/leaflet.js" ></script>
+   
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+
+        var map = L.map('map',{
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           layers: [grayscale]
+       });
+
+       /**
+         * @description: options是一个特殊属性，与传递给扩展的其他对象不同，options将与父对象合并而不是完全覆盖它
+         * @param {*}
+         * @return {*}
+         */
+        
+         var MyClass = L.Class.extend({
+                options: {
+                    myOption1: 'foo',
+                    myOption2: 'bar'
+                }
+            });
+
+            var MyChildClass = MyClass.extend({
+                options: {
+                    myOption1: 'baz',
+                    myOption3: 5
+                }
+            });
+
+            var a = new MyChildClass();
+            a.options.myOption1; // 'baz'
+            a.options.myOption2; // 'bar'
+            a.options.myOption3; // 5
+
+
+            // L.Util.setOptions，一种方便地将传递给构造函数的选项与该类中的默认定义合并的方法
+            
+
+
+            // Includes
+            // include是一个特殊的类属性，它将所有指定的对象合并到该类中（此类对象称为mixins）
+
+            // statics: 定义静态属性和方法
+
+
+            // addInitHook 方法 
+            // 如果您是插件开发人员，
+            // 则通常需要向现有类中添加其他初始化代码（例如，编辑L.Polyline的钩子）。
+            //  Leaflet提供了一种使用addInitHook方法轻松完成此操作的方法
+    </script>
+</body>
+</html>

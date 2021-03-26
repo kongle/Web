@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+        /**
+         * @description: 用于在地图上加载和显示图块图层,大多数切片服务器都需要的属性，您可以设置在图层下面。扩展GridLayer
+         */
+        var map = L.map('map',{
+           
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           zoomControl: false,
+           layers: [grayscale]
+       }) 
+       
+    /** 
+        URL template: 
+            'http://{s}.somedomain.com/blabla/{z}/{x}/{y}{r}.png'
+            {s}表示可用的子域之一 ( 顺序使用，以帮助每个域限制浏览器并行请求；子域值在选项中指定；默认情况下可以省略a，b或c )
+            {z}-缩放级别，{x}和{y}-平铺坐标。 {r}可用于在URL上添加“ @ 2x”以加载视网膜图块
+            您可以在模板中使用自定义键，该自定义键将从TileLayer选项进行评估
+            L.tileLayer('http://{s}.somedomain.com/{foo}/{z}/{x}/{y}.png', {foo: 'bar'});
+        
+            Option	       Type	       Default	        Description
+            minZoom	        Number	        0	        显示此层的最小缩放级别（含）
+            maxZoom	        Number	        18	        
+            subdomains	    String|String[]	'abc'	    切片服务的子域。可以以一个字符串（每个字母是一个子域名）或字符串数​​组的形式传递
+            errorTileUrl	String	        ''	        要显示的图块图像的URL代替无法加载的图块。
+            zoomOffset	    Number      	 0	
+            tms	            Boolean	        false	    如果为true，则反转瓦片的Y轴编号（对于TMS服务将其打开）
+            zoomReverse	    Boolean	        false	
+            detectRetina	Boolean	        false	
+            crossOrigin	    Boolean|String	false	
+
+            Options inherited from GridLayer
+            Options inherited from Layer
+    */
+    </script>
+</body>
+</html>

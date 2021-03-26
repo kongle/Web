@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+    <style>
+        .imageOverlay{
+            opacity: .8;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+        /**
+         * @description: 用于在地图上加载和显示图块图层,大多数切片服务器都需要的属性，您可以设置在图层下面。扩展GridLayer
+         */
+        var map = L.map('map',{
+           
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           zoomControl: false,
+           layers: [grayscale]
+       }) 
+
+        /**
+         * @description: 用于在地图上绘制多边形,Extends Polyline.
+         * @param { <String|SVGElement> svg, <LatLngBounds> bounds, <SVGOverlay options> options? }
+         * @return { }
+         */
+        
+        // create a red polyline from an array of LatLng points
+        var latlngs = [
+            [
+                31.365730171110986,
+                120.72678565979004
+                
+            ],
+            [   31.368093666062805,
+                120.7348322868347
+                
+            ],
+            [
+                31.3709700874835,
+                120.73217153549193
+                
+            ],
+            [
+                31.371647957419558,
+                120.72554111480713
+                
+            ]
+          
+        ];
+
+        var polyline = L.polygon(latlngs, {
+                color: 'red',
+                smoothFactor: 1.0,   //  在每个缩放层级上简化折线的程度,更大意味着更好的性能和更平滑的外观，更小意味着更准确的表示。
+                noClip: false   // 禁用折线裁剪
+            }).addTo(map);
+
+        // zoom the map to the polyline
+        map.fitBounds(polyline.getBounds())
+
+    </script>
+</body>
+</htm>

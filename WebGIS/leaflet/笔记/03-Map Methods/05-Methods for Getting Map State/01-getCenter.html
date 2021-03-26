@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>getCenter</title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../../../src/leaflet/leaflet.css" />
+    <script src="../../../src/leaflet/leaflet.js" ></script>
+   
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+       var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+        // 创建两个瓦片图层; baseLayers部分
+       var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+        var map = L.map('map',{
+           
+           center: [31.36831352303675, 120.73309421539305],
+           zoom: 13,
+           zoomControl: false,
+           layers: [grayscale]
+       }) 
+
+      /**
+       * @description: 返回地图视图的地理中心
+       * param {  } 
+       * @return { LatLng }  
+       */
+        
+       setTimeout( function(){
+
+                 console.log( map.getCenter() );
+                 // 略
+                //  getZoom()  
+                //  getBounds()      返回当前地图视图中可见的地理范围
+                // getMinZoom()  
+                // getMaxZoom()
+                // getBoundsZoom( <LatLngBounds> bounds, <Boolean> inside?, <Point> padding? )   返回最大缩放级别，在该级别上，给定范围完全适合地图视图........
+                // getSize()         返回地图容器的当前大小（以像素为单位）
+                // getPixelBounds()   以投影的像素坐标返回当前地图视图的边界  ??
+                // getPixelOrigin()    返回地图图层左上角点的投影像素坐标 ???
+                // getPixelWorldBounds(<Number> zoom?)   返回像素级别的世界范围，以进行缩放级别缩放
+                
+        }, 1000)
+    
+     
+    
+    
+       
+    </script>
+</body>
+</html>

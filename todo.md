@@ -4,7 +4,7 @@
     /*document.onkeydown=function(ev){
             console.log(ev.keyCode);
     };*/
-
+second
 问题
   表单事件的区别 input change
   v-for key的作用

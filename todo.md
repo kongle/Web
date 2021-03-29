@@ -4,7 +4,6 @@
     /*document.onkeydown=function(ev){
             console.log(ev.keyCode);
     };*/
-    2
     3
    问题：
   for key的作用

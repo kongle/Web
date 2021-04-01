@@ -107,8 +107,9 @@ class promise{
 
     }
     
-    catch(){
-
+    // 处理错误 只需返回一个promise对象
+    catch( onrejected ){
+        this.then( undefined, onrejected );
     }
 
     finally(){

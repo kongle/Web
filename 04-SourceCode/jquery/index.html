@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./dist/bundle.js"></script>
+    <!-- <script src='jQuery.js'></script> -->
+</head>
+<body>
+    <div class="box">
+        12
+        <!-- <span class="box">span</span> -->
+    </div>
+    <!-- <script>
+        // function test1(){
+        //     alert(1)
+        // }
+        // function test2(){
+        //     alert(2)
+        // }
+        // var cb = $.Callbacks('once');
+        // cb.add(test1)
+        // cb.add(test2)
+
+        // cb.remove(test1)
+        // cb.fire()
+        // console.log(b)
+
+        // $('<input type="checkbox"/>').appendTo($(document.body))
+
+    //    $.queue(document,'fn',function(){
+    //        alert(1)
+    //    })  // 不能链式操作
+    //    var arr = $.queue(document,'fn',function(){
+    //        alert(2)
+    //    })
+    //    var arr = $.dequeue(document,'fn',function(){
+    //        alert(2)
+    //    })
+    //    console.log(arr);
+       
+    
+    // $(function(){
+    //     // $('.box').css('border','1px solid red')
+    //     $('div').has('.box').css('border','1px solid red')
+    // })
+
+    
+    $(function(){
+        // $.ajax({})
+        // console.log($.param({aa: 'dsfsdf', ss : '阿达是否'} ));
+        
+        // $.ajax
+        // $().load   
+        // $.get()
+        // $.post
+        // $.getJSON
+        // $.getScript
+        
+        $('.box').load('1.html', function(a,b,c){
+            console.log(a + '\n',b + '\n' ,c);
+            
+        });
+
+        // $.ajax({
+        //     url: '',
+        //     type: 'get',
+        //     dataType: 'jsonp'
+        //     timeout: 10000  10s未返回走error
+        // }).done(function(res){
+        //     console.log(res);
+            
+        // })
+        
+        // ajaxTransport ajaxSetting ajaxPrefilter
+        // ajaxConvert
+    })
+    </script> -->
+
+    <script>
+    //    jQuery('')
+    // console.log($.buildFragment(['<li>13</li><script><\/script>'],document, []));
+    var json1 = {0: 'q',1: 'w',length:2};
+    var json2 = {0: 'e',1: 'r'};
+    var json3 = {0: 'a',1: 's',2: 'd',length:3};
+    var json4 = {0: 'd',1: 'f'};
+
+    // console.log($.merge(json1,json3));
+
+    var  isArrayLike = function( obj ) {
+        var length = obj.length,
+                type = jQuery.type( obj ),
+                ret = false;
+
+            if ( type === 'array' ) {
+                ret = true ;
+            }
+            if ( type === 'object' && length > -1 ) {
+                for ( var i = 0; i < length; i++ ) {
+                    if ( !(i in obj) ) {
+                        // console.error('格式不完整');
+                        return false ;
+                    }
+                }
+                ret = true ;
+            } 
+
+            return ret;
+    }
+
+    var obj = { 0:12,1:2132,length:3};
+    var arr = [];
+    
+    // console.log( isArrayLike( arr ) );
+
+    function a(){
+        alert(1)
+    }
+    function b(){
+        alert(2)
+    }
+    var cb = $.Callbacks();
+
+    cb.add(a);
+    cb.add(b);
+    // cb.remove(b)
+    cb.has(a);
+    // cb.fire();
+
+    // console.log($.support);
+    
+    
+    </script>
+
+</body>
+</html> 
